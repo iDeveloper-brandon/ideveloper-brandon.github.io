@@ -1,5 +1,10 @@
-$primary-color: #444;
+@import "abstracts/variables";
 
-body {
-  background: $primary-color;
-}
+@import "base/base";
+@import "base/typography";
+
+@import "components/icon";
+
+@import "layout/header";
+
+@import "pages/home";
