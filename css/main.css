@@ -6,10 +6,27 @@ body {
   color: #fff;
   height: 100%;
   margin: 0; }
+  body#bg-img {
+    background: url(../../dist/img/background.jpg);
+    background-attachment: fixed;
+    background-size: cover; }
+    body#bg-img:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: rgba(223, 217, 217, 0.5); }
 
 main {
   padding: 4rem;
   height: 100%; }
+  main#home {
+    overflow: hidden; }
+    main#home h1 {
+      margin-top: 20vh; }
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -43,7 +60,8 @@ a {
   .icons a {
     padding: 0.4rem; }
     .icons a:hover {
-      color: #1a87ee; }
+      color: #1a87ee;
+      transition: all 0.5s ease-out; }
 
 header {
   position: fixed;
