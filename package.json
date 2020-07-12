@@ -1,0 +1,23 @@
+{
+  "name": "ideveloper-brandon.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iDeveloper-brandon/ideveloper-brandon.github.io.git"
+  },
+  "author": "iDeveloper-brandon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iDeveloper-brandon/ideveloper-brandon.github.io/issues"
+  },
+  "homepage": "https://github.com/iDeveloper-brandon/ideveloper-brandon.github.io#readme"
+}
