@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iDeveloper-brandon/ideveloper-brandon.github.io.git"
+    "url": "git+https://github.com/iDeveloperbrandon/ideveloperbrandon.github.io.git"
   },
   "author": "iDeveloper-brandon",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/iDeveloper-brandon/ideveloper-brandon.github.io/issues"
+    "url": "https://github.com/iDeveloperbrandon/ideveloperbrandon.github.io/issues"
   },
-  "homepage": "https://github.com/iDeveloper-brandon/ideveloper-brandon.github.io#readme"
+  "homepage": "https://github.com/iDeveloperbrandon/ideveloperbrandon.github.io#readme"
 }
