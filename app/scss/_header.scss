@@ -1,0 +1,14 @@
+nav {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  ul {
+    display: flex;
+    list-style: none;
+    li {
+      font-size: 2rem;
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+}

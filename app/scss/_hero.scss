@@ -1,0 +1,13 @@
+.hero {
+  display: flex;
+  &__info {
+    h1 {
+      color: $color-primary;
+    }
+  }
+
+  &__img {
+    width: 10%;
+    height: 5%;
+  }
+}
