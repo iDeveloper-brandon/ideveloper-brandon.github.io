@@ -73,11 +73,13 @@
       justify-content: flex-end;
       list-style: none;
       text-decoration: none;
+
+      li:not(last-child) {
+        margin-right: 3rem;
+      }
     }
 
-    li:not(last-child) {
-      margin-right: 2rem;
-    }
+   
 
     a {
       text-decoration: none;
