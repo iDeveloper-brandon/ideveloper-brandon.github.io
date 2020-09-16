@@ -1,31 +1,20 @@
 .hero {
   display: grid;
   padding: 4rem;
-  @media screen and (min-width: 500px) {
-    grid-template-columns: 1fr 2fr;
-  }
-  &__info {
-    z-index: -1;
-    order: 2;
+  grid-template-columns: 1fr;
 
-    @media screen and (min-width: 500px) {
-      width: 60%;
-    }
-    h1 {
-      color: $color-primary;
-      font-size: 2rem;
-    }
+  @media screen and (min-width: 550px) {
+    background: red;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__info {
+    order: 2;
   }
 
   &__img {
+    order: 1;
     width: 100%;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    order: 1;
-
-    @media screen and (min-width: 500px) {
-      img {
-        width: 50rem;
-      }
-    }
   }
 }
