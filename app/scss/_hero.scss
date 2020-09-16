@@ -1,8 +1,16 @@
 .hero {
-  display: flex;
+  display: grid;
   padding: 4rem;
+  @media screen and (min-width: 500px) {
+    grid-template-columns: 1fr 2fr;
+  }
   &__info {
     z-index: -1;
+    order: 2;
+
+    @media screen and (min-width: 500px) {
+      width: 60%;
+    }
     h1 {
       color: $color-primary;
       font-size: 2rem;
@@ -10,8 +18,14 @@
   }
 
   &__img {
-    width: 10%;
-    height: 5%;
+    width: 100%;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    order: 1;
+
+    @media screen and (min-width: 500px) {
+      img {
+        width: 50rem;
+      }
+    }
   }
 }
