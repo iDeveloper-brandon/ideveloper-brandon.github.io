@@ -9,13 +9,22 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <a href="#" id="btnHamburger" class="header__toggle hide-for-desktop">
+      <button href="#" id="btnHamburger" class="header__toggle">
         <span></span>
         <span></span>
         <span></span>
-      </a>
+      </button>
 
-      <div class="header__container">
+      <div class="show-for-desktop">
+        <nav>
+          <li>Home</li>
+          <li>About</li>
+          <li>Project</li>
+          <li>Contact</li>
+        </nav>
+      </div>
+
+      <div class="header__container hide-for-desktop">
         <nav class="header__container--nav">
           <li><a href="#hero" class="scroll-link">Home</a></li>
           <li><a href="#about" class="scroll-link">About me</a></li>
@@ -34,7 +43,7 @@
           Investing and building web projects through entire my life. I'd create
           more value for the world
         </p>
-        <a href="#project" class="scroll-link btn">Explore Project</a>
+        <button href="#project" class="scroll-link btn">Explore Project</button>
       </div>
       <img src="./img/mypic2.png" alt="" class="hero__img" />
     </div>

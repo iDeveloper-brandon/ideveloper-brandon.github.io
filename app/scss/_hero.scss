@@ -4,17 +4,54 @@
   grid-template-columns: 1fr;
 
   @media screen and (min-width: 550px) {
-    background: red;
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  &__info {
-    order: 2;
   }
 
   &__img {
     order: 1;
     width: 100%;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding-bottom: 1rem;
+  }
+
+  &__info {
+    order: 2;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+
+    @media screen and (min-width: 550px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: $color-primary;
+    }
+    h3 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+
+    .btn {
+      text-transform: uppercase;
+      background: transparent;
+      color: #333;
+      padding: 1rem;
+      font-size: 0.875rem;
+      border: 2px solid #333;
+      cursor: pointer;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+      text-decoration: none;
+      text-align: center;
+      align-self: flex-start;
+      justify-content: center;
+    }
   }
 }

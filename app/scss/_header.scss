@@ -1,14 +1,16 @@
 .header {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
-  height: 5rem;
   background-color: #fff;
 
   &__toggle {
-    @media screen and (min-width: 500px) {
-    }
-
+    border: none;
+    background: none;
+    outline: none;
     > span {
+      @media screen and (min-width: 550px) {
+        display: none;
+      }
       display: block;
       width: 26px;
       height: 2px;
@@ -35,14 +37,6 @@
     position: relative;
     top: 2rem;
 
-    @media screen and (min-width: 500px) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      //justify-content: flex-end;
-    }
-
     &--nav {
       z-index: 1000;
       display: flex;
@@ -63,28 +57,23 @@
       }
     }
   }
+}
 
-  // .navbar {
-  //    background-color: #fff;
-  //   li {
-  //     list-style: none;
-  //     font-size: 2rem;
-  //     cursor: pointer;
-  //     text-align: center;
-  //     margin-bottom: 1.5rem;
-  //     a {
-  //       text-decoration: none;
-  //       color: black;
-  //     }
-  //   }
+.show-for-desktop {
+  display: none;
+  @media screen and (min-width: 550px) {
+    display: block;
+  }
 
-  //   @media screen and (min-width: 500px) {
-  //     display: flex;
+  nav {
+    @media screen and (min-width: 550px) {
+      display: flex;
+      justify-content: flex-end;
+      list-style: none;
+    }
 
-  //     li {
-  //       margin-right: 2rem;
-  //       transform: translateY(0px);
-  //     }
-  //   }
-  // }
+    li:not(last-child) {
+      margin-right: 2rem;
+    }
+  }
 }
