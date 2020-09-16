@@ -6,7 +6,7 @@
 
   &__toggle {
     @media screen and (min-width: 500px) {
-     }
+    }
 
     > span {
       display: block;
@@ -37,7 +37,10 @@
 
     @media screen and (min-width: 500px) {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      //justify-content: flex-end;
     }
 
     &--nav {
