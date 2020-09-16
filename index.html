@@ -7,27 +7,55 @@
     <title>iDeveloper Brandon</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>About Me</li>
-        <li>Project</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
+    <!-- Header -->
+    <header class="header">
+      <a href="#" id="btnHamburger" class="header__toggle hide-for-desktop">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+
+      <div class="header__container">
+        <nav class="navbar">
+          <li><a href="#hero" class="scroll-link">Home</a></li>
+          <li><a href="#about" class="scroll-link">About me</a></li>
+          <li><a href="#project" class="scroll-link">Project</a></li>
+          <li><a href="#contact" class="scroll-link">Contact</a></li>
+        </nav>
+      </div>
+    </header>
+    <!-- Hero -->
     <div class="hero">
       <div class="hero__info">
-        <h1>Hi, i'm Brandon</h1>
+        <h1>Hi, i'm Brandon S. Ha</h1>
         <h3>i'm an iDeveloper</h3>
         <p>
           Investing and building web projects through entire my life. I'd create
           more value for the world
         </p>
+        <a href="#project" class="scroll-link btn">Explore Project</a>
       </div>
       <img src="./img/mypic2.png" alt="" class="hero__img" />
     </div>
-    <div class="about">About Me</div>
-    <div class="project">projects i built</div>
-    <div class="contact">contact</div>
+
+    <!-- About -->
+    <div class="about" id="about">
+      <h1>About Me</h1>
+      <div class="about__desc">
+        <h3>Hi, i'm <strong>Brandon S. Ha</strong></h3>
+      </div>
+      <div class="about__skillset"></div>
+    </div>
+
+    <!-- Project -->
+    <div class="project">
+      <h1>Projects i built</h1>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact">
+      <h1>Contact me</h1>
+    </div>
   </body>
   <script src="./app/js/app.js"></script>
 </html>

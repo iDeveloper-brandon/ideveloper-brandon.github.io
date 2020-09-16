@@ -1,13 +1,60 @@
-nav {
+.header {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  ul {
-    display: flex;
-    list-style: none;
-    li {
-      font-size: 2rem;
+  padding: 1.5rem;
+  height: 5rem;
+
+  &__toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+
+    @media screen and (min-width: 500px) {
+      display: none;
+    }
+
+    > span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background-color: black;
+      transition: all 0.5s;
+      transform-origin: 3px 1px;
 
       &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  &__container {
+    display: none;
+
+    @media screen and (min-width: 500px) {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .navbar {
+    li {
+      list-style: none;
+      font-size: 2rem;
+      cursor: pointer;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+
+    @media screen and (min-width: 500px) {
+      display: flex;
+
+      li {
         margin-right: 2rem;
+        transform: translateY(0px);
       }
     }
   }
