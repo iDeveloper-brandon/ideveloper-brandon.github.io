@@ -1,10 +1,13 @@
-const hamburger = document.getElementById("btnHamburger");
-const navbar = document.querySelector(".navbar");
-
 const about = document.querySelector(".about");
 const project = document.querySelector(".project");
 const contact = document.querySelector(".contact");
 
-hamburger.addEventListener("click", () => {
-  navbar.classList.toggle("show-nav");
+////////////////////////////////////////////////////
+// Navbar with toggle button
+const navToggle = document.getElementById("btnHamburger");
+const linksContainer = document.querySelector(".header__container");
+const link = document.querySelector(".scroll-link");
+
+navToggle.addEventListener("click", function () {
+  linksContainer.classList.toggle("show-links");
 });
