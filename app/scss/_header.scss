@@ -62,6 +62,7 @@
 .show-for-desktop {
   display: none;
   font-size: 2rem;
+
   @media screen and (min-width: 550px) {
     display: block;
   }
@@ -71,10 +72,17 @@
       display: flex;
       justify-content: flex-end;
       list-style: none;
+      text-decoration: none;
     }
 
     li:not(last-child) {
       margin-right: 2rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
     }
   }
 }
