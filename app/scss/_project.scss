@@ -7,7 +7,6 @@
 
 .project__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .project {
@@ -17,8 +16,8 @@
 
   &__img {
     img {
-      width: 100%;
-      object-fit: cover;
+      width: 50%;
+      height: 50%;
     }
   }
 
