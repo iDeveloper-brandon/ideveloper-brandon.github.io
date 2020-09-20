@@ -1,0 +1,27 @@
+.projects {
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+}
+
+.project__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  &__img {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+  }
+}
