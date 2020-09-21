@@ -6,8 +6,8 @@ h1 {
 
 .project__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   gap: 2rem;
 }
 
@@ -65,6 +65,11 @@ h1 {
       display: grid;
       grid-template-columns: 1fr 1fr;
       color: #023c40;
+      border-top: 1px solid #333;
+
+      small:first-child {
+        border-right: 1px solid #333;
+      }
 
       a {
         text-decoration: none;
