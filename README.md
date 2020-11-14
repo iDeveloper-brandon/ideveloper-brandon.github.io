@@ -1,4 +1,4 @@
-# ideveloperBrandon.github.io
+# idevbrandon.github.io
 
 This is going to be my portfolio website as my Github user page. 
 
