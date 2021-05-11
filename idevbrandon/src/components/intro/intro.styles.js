@@ -8,6 +8,6 @@ export const Intro = styled.div`
     rgb(24, 0, 200) 0%,
     rgb(185, 0, 180) 100%
   );
-  width: 100%;
+  width: 40%;
   position: relative;
 `;
